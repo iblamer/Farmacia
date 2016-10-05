@@ -26,7 +26,7 @@ namespace LogIn_design
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reguistro r = new Reguistro();
+            Registro r = new Registro();
 
             if (r.Name == nomBox.Text)
                 MessageBox.Show("Successful login");
@@ -37,7 +37,7 @@ namespace LogIn_design
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Reguistro r = new Reguistro();
+            Registro r = new Registro();
             r.Show();
         }
     }

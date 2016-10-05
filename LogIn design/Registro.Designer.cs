@@ -1,6 +1,6 @@
 ﻿namespace LogIn_design
 {
-    partial class Reguistro
+    partial class Registro
     {
         /// <summary>
         /// Required designer variable.

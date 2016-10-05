@@ -12,37 +12,40 @@ using BLL;
 
 namespace LogIn_design
 {
-    public partial class Reguistro : Form
+    public partial class Registro : Form
     {
-        public Reguistro()
+        public Registro()
         {
             InitializeComponent();
             ListarTipo();
         }
 
-        string categoria = " ";
+        string Tipo = " ";
 
         private void button5_Click(object sender, EventArgs e)
         {
             Usuarios Usuario = new Usuarios();           
             Usuario.Clave = pwBox.Text;
             Usuario.Nombre = nameBox.Text;
-            Usuario.IdTipo = StringToInt(categoria);
+            Usuario.IdTipo = StringToInt(Tipo);
 
 
             if (pwBox.Text != cpwBox.Text)
             {
                 MessageBox.Show("Las contrasenas no coinciden");
+                cleanPw();
             }
             else
             {
 
                 UsuariosBLL.Insertar(Usuario);
-                /*if (UsuariosBLL.Insertar(Usuario))
+                if (UsuariosBLL.Insertar(Usuario))
                 {
                     MessageBox.Show("Se guardo!");
-                }*/
-            }
+                    clean();
+                }
+                
+             }
             
            
                 
@@ -59,7 +62,10 @@ namespace LogIn_design
                     MessageBox.Show("Se elimino el usuario!");
                 }
                 else
+                {
                     MessageBox.Show("El id de este usuario no existe");
+                    IdBox.Clear();
+                }
             }
             catch(Exception)
             {
@@ -104,6 +110,12 @@ namespace LogIn_design
             pwBox.Text = user.Clave.ToString();
         }
 
+        private void cleanPw()
+        {
+            pwBox.Clear();
+            cpwBox.Clear();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             Usuarios user = new Usuarios();
@@ -125,7 +137,7 @@ namespace LogIn_design
        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            categoria = typeCBox.SelectedValue.ToString();
+            Tipo = typeCBox.SelectedValue.ToString();
         }
         FarmaciaDB db = new FarmaciaDB();
         private void ListarTipo ()
