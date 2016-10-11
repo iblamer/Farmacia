@@ -57,5 +57,28 @@ namespace BLL
             db.SaveChanges();
         }
 
+        public static List<Usuarios>GetLista(int usuarioId)
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+
+            var db = new FarmaciaDB();
+
+            lista = db.Usuario.Where(u => u.UserID == usuarioId).ToList();
+
+            return lista;
+
+        }
+
+        public static List<Usuarios>GetLista()
+        {
+            List<Usuarios> lista = new List<Usuarios>();
+
+            var db = new FarmaciaDB();
+
+            lista = db.Usuario.ToList();
+
+            return lista;
+        }
+
     }
 }

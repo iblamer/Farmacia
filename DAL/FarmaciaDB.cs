@@ -16,7 +16,11 @@ namespace DAL
 
         public virtual DbSet<Usuarios> Usuario { get; set; }
 
-        public virtual DbSet<Categorias> Categoria { get; set; }
+        public virtual DbSet<TipoUsuarios> TipoUsuario { get; set; }
+
+        public virtual DbSet <Laboratorios> Laboratorio { get; set; }
+
+        public virtual DbSet <Medicinas> Medicina { get; set; }
 
 
 

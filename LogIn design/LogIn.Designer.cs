@@ -38,7 +38,20 @@
             this.conBox = new System.Windows.Forms.RichTextBox();
             this.nomBox = new System.Windows.Forms.RichTextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laboratoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.medicinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDeUsuarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,6 +157,101 @@
             this.linkLabel1.Text = "No tienes cuenta? Haz click aqui!";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.registroToolStripMenuItem,
+            this.consultasToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(721, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // registroToolStripMenuItem
+            // 
+            this.registroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.laboratoriosToolStripMenuItem,
+            this.tiposDeUsuarioToolStripMenuItem,
+            this.medicinasToolStripMenuItem});
+            this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.registroToolStripMenuItem.Text = "Registro";
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
+            // 
+            // laboratoriosToolStripMenuItem
+            // 
+            this.laboratoriosToolStripMenuItem.Name = "laboratoriosToolStripMenuItem";
+            this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.laboratoriosToolStripMenuItem.Text = "Laboratorios";
+            this.laboratoriosToolStripMenuItem.Click += new System.EventHandler(this.laboratoriosToolStripMenuItem_Click);
+            // 
+            // tiposDeUsuarioToolStripMenuItem
+            // 
+            this.tiposDeUsuarioToolStripMenuItem.Name = "tiposDeUsuarioToolStripMenuItem";
+            this.tiposDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.tiposDeUsuarioToolStripMenuItem.Text = "Tipos de usuario";
+            this.tiposDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.tiposDeUsuarioToolStripMenuItem_Click);
+            // 
+            // medicinasToolStripMenuItem
+            // 
+            this.medicinasToolStripMenuItem.Name = "medicinasToolStripMenuItem";
+            this.medicinasToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.medicinasToolStripMenuItem.Text = "Medicinas";
+            this.medicinasToolStripMenuItem.Click += new System.EventHandler(this.medicinasToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuarioToolStripMenuItem,
+            this.laboratorioToolStripMenuItem,
+            this.tiposDeUsuarioToolStripMenuItem1});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
+            // 
+            // laboratorioToolStripMenuItem
+            // 
+            this.laboratorioToolStripMenuItem.Name = "laboratorioToolStripMenuItem";
+            this.laboratorioToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.laboratorioToolStripMenuItem.Text = "Laboratorio";
+            this.laboratorioToolStripMenuItem.Click += new System.EventHandler(this.laboratorioToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // tiposDeUsuarioToolStripMenuItem1
+            // 
+            this.tiposDeUsuarioToolStripMenuItem1.Name = "tiposDeUsuarioToolStripMenuItem1";
+            this.tiposDeUsuarioToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.tiposDeUsuarioToolStripMenuItem1.Text = "Tipos De Usuario";
+            this.tiposDeUsuarioToolStripMenuItem1.Click += new System.EventHandler(this.tiposDeUsuarioToolStripMenuItem1_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,13 +262,17 @@
             this.ClientSize = new System.Drawing.Size(721, 498);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "LogIn";
             this.Text = "LogIn";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,6 +289,18 @@
         private System.Windows.Forms.RichTextBox conBox;
         private System.Windows.Forms.RichTextBox nomBox;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laboratoriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiposDeUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem medicinasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laboratorioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiposDeUsuarioToolStripMenuItem1;
     }
 }
 

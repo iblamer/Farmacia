@@ -26,7 +26,7 @@ namespace LogIn_design
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Registro r = new Registro();
+            RegistroUsuario r = new RegistroUsuario();
 
             if (r.Name == nomBox.Text)
                 MessageBox.Show("Successful login");
@@ -37,8 +37,50 @@ namespace LogIn_design
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Registro r = new Registro();
+            RegistroUsuario r = new RegistroUsuario();
             r.Show();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroUsuario rUsuarios = new RegistroUsuario();
+            rUsuarios.Show();
+        }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaUsuario cUsuario = new Consultas.ConsultaUsuario();
+            cUsuario.Show();
+        }
+
+        private void laboratoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroLabs rLaboratorios = new RegistroLabs();
+            rLaboratorios.Show();
+        }
+
+        private void tiposDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroTiposDeUsuario rTipos = new RegistroTiposDeUsuario();
+            rTipos.Show();
+        }
+
+        private void medicinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroMeds rMeds = new RegistroMeds();
+            rMeds.Show();
+        }
+
+        private void laboratorioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaLaboratorios cLaboratorios = new Consultas.ConsultaLaboratorios();
+            cLaboratorios.Show();
+        }
+
+        private void tiposDeUsuarioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consultas.ConsultaTiposDeUsuario cTipos = new Consultas.ConsultaTiposDeUsuario();
+            cTipos.Show();
         }
     }
 }

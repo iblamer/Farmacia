@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LaboratoriosBLL.cs" />
+    <Compile Include="MedsBLL.cs" />
+    <Compile Include="TiposBLL.cs" />
     <Compile Include="UsuariosBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

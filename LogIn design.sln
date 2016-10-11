@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogIn_Design", "LogIn design\LogIn_Design.csproj", "{69B18328-3C46-438B-A69B-213E7D5E6583}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia", "LogIn design\Farmacia.csproj", "{69B18328-3C46-438B-A69B-213E7D5E6583}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{A631EE4E-66E9-4E2E-83D9-D152307C891E}"
 EndProject
