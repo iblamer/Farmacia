@@ -9,7 +9,7 @@ namespace BLL
 {
     public class LaboratoriosBLL
     {
-        public static bool AddLab(Laboratorios lab)
+        public static bool Insertar(Laboratorios lab)
         {
             bool retorno = false;
             try

@@ -56,7 +56,7 @@ namespace LogIn_design
 
             LlenarClases(lab);
 
-            if(LaboratoriosBLL.AddLab(lab))
+            if(LaboratoriosBLL.Insertar(lab))
             {
                 MessageBox.Show("El laboratorio se a guardado");
                 clean();

@@ -10,6 +10,7 @@ using Entidades;
 using DAL;
 using BLL;
 
+
 namespace LogIn_design
 {
     public partial class LogIn : Form
@@ -17,6 +18,10 @@ namespace LogIn_design
         public LogIn()
         {
             InitializeComponent();
+            var Rep = new Nuevo();
+            Rep.LabId = 1;
+            Rep.Show();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

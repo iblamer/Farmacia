@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmacia", "LogIn design\Farmacia.csproj", "{69B18328-3C46-438B-A69B-213E7D5E6583}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0E8C99A9-5E88-4156-96BE-2E1EEC11CC95}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{B9E51203-3E6B-4BB1-8E4F-9DF6775037CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLLTests", "BLLTests\BLLTests.csproj", "{2055775F-2896-47F0-BF73-A1635A32A5EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B9E51203-3E6B-4BB1-8E4F-9DF6775037CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9E51203-3E6B-4BB1-8E4F-9DF6775037CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9E51203-3E6B-4BB1-8E4F-9DF6775037CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2055775F-2896-47F0-BF73-A1635A32A5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2055775F-2896-47F0-BF73-A1635A32A5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2055775F-2896-47F0-BF73-A1635A32A5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2055775F-2896-47F0-BF73-A1635A32A5EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
